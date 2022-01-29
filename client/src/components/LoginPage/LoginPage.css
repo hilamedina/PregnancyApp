@@ -14,8 +14,19 @@
 }
 .PaperStyle{
   padding:20px;
-  height: 70vh;
+  height: 60vh;
   width: 50vh;
   margin-top:20px;
-  opacity: calc(0.5);
+  opacity: calc(0.4);
+  border:none;
+  border-radius:30%;
+}
+.AvatarStyle{
+  background-color:red; 
+}
+.btnStyle{
+  margin-top:8px;
+}
+.Links-Login{
+  margin-top:8px;
 }
