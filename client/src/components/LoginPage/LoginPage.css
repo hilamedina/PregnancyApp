@@ -1,0 +1,21 @@
+.LoginPage-Div{
+    display:flex;
+    height:100vh;
+
+}
+.LoginImage{
+    background: url("../Images/feet2.jpg") no-repeat center center/cover;
+  /* height: 100%; */
+  width:100%;
+}
+.LoginSignIn{
+  display:flex;
+  justify-content: center;
+}
+.PaperStyle{
+  padding:20px;
+  height: 70vh;
+  width: 50vh;
+  margin-top:20px;
+  opacity: calc(0.5);
+}
