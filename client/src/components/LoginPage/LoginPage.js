@@ -43,10 +43,6 @@ export default function LoginPage() {
                 fullWidth
                 required
               ></TextField>
-              {/* <FormControlLabel>
-                control=
-                {<Checkbox name="checkedB" color="primary" />}
-              </FormControlLabel> */}
               <br />
               <br />
               <br />
