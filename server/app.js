@@ -1,19 +1,31 @@
 require('dotenv').config();
+const mongoose = require('mongoose');
 const express = require('express');
+const userRoute = require('../server/Route/Route');
 const cors = require('cors');
 const path = require('path');
 const app = express();
+// const Size = require('../server/model/sizeModel');
 
 const publicPath = path.join(__dirname, '../client/build');
+const { seedInitialData } = require('../server/seedDB');
 
 app.use(cors());
 app.use(express.json());
 app.use(express.static(publicPath));
+app.use('/', userRoute);
 
-app.use('*', (req, res) => {
-  res.send('this route is not exist');
+const PASSWORD = process.env.PASSWORD;
+
+mongoose.connect(
+  `mongodb+srv://HilaDb:@databaseproject.nwjez.mongodb.net/pregnancyDB?retryWrites=true&w=majority`
+);
+
+// const PORT = process.env.PORT;
+
+const PORT = 5000;
+app.listen(PORT, () => {
+  console.log(`listening on port ${PORT}`);
 });
 
-const PORT = process.env.PORT;
-
-app.listen(PORT, () => console.log(`Server is up and runging on ${PORT}`));
+seedInitialData();

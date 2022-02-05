@@ -54,6 +54,10 @@ function SwipeableTextMobileStepper(props) {
 
     return null;
   };
+
+  if (!props.data || props.data.length < 1) {
+    return <div />;
+  }
   return (
     <div
       style={{

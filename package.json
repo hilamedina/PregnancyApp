@@ -6,10 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./client/app.js",
-		"start-server-dev": "nodemon ./server/app.js",
-		"start-react-dev": "npm run start --prefix client",
-		"build-react": "npm run build --prefix client",
-		"heroku-postbuild": "npm install --prefix client && npm run build-react"
+    "start-server-dev": "nodemon ./server/app.js",
+    "start-react-dev": "npm run start --prefix client",
+    "build-react": "npm run build --prefix client",
+    "heroku-postbuild": "npm install --prefix client && npm run build-react"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
     "cors": "^2.8.5",
     "dotenv": "^15.0.0",
     "express": "^4.17.2",
+    "mongoose": "^6.2.0",
     "path": "^0.12.7"
   }
 }
