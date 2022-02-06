@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { getSizeData } from '../../Api/Api';
+// import { getWeeklyData } from '../../Api/Api';
 
 // import Carousel from './carousel';
 import SwipeableTextMobileStepper from './carousel';
@@ -124,8 +125,6 @@ const getStyleElement = (step) => {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            // margin: 'auto',
-            // border: 'green 2px solid',
             width: '150px',
             height: '100px',
             color: '#5E4C5A',
@@ -144,7 +143,6 @@ const getStyleElement = (step) => {
         <p
           style={{
             color: '#5E4C5A',
-            // fontWeight: 'bold',
             whiteSpace: 'pre-wrap',
             padding: '0 6% 0 6% ',
           }}
@@ -156,7 +154,7 @@ const getStyleElement = (step) => {
   );
 };
 
-const sizeCarousel = (props) => {
+const SizeCarousel = (props) => {
   const [sizeData, setSizeData] = useState([]);
   useEffect(() => {
     getSizeData(setSizeData);
@@ -173,4 +171,42 @@ const sizeCarousel = (props) => {
   );
 };
 
-export default sizeCarousel;
+// const WeeklyCarousel = (props) => {
+//   const [weeklyData, setWeeklyData] = useState([]);
+//   useEffect(() => {
+//     getWeeklyData(setWeeklyData);
+//   }, []);
+//   return (
+//     <SwipeableTextMobileStepper
+//       data={images}
+//       data={weeklyData}
+//       // צד שמאל זה השם של הפרופס בסוויפבל - מי שזה נשלח אליו
+//       //צד ימין זה איך שזה נקרא מהקובץ הזה - שקיבהלתי מהאפ כי הפונקציה במקרה הזה כתובה שם
+//       returnToMainView={props.returnToMainView}
+//       getDataStyleElement={getStyleElement1}
+//     />
+//   );
+// };
+
+// const getStyleElement1 = (step) => {
+//   return (
+//     <div
+//       style={{
+//         wordSpacing: '4px',
+//         boxSizing: 'border-box',
+//       }}
+//     >
+//       <p
+//         style={{
+//           color: '#5E4C5A',
+//           whiteSpace: 'pre-wrap',
+//           padding: '0 6% 0 6% ',
+//         }}
+//       >
+//         {step.description}
+//       </p>
+//     </div>
+//   );
+// };
+
+export default SizeCarousel;

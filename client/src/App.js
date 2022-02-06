@@ -5,6 +5,7 @@ import DatePicker from './components/datepicker/datePicker';
 import MainBtnScreen from './components/butoonComponent/mainBtnScreen';
 import { useState } from 'react';
 import SizeCarousel from './components/carousel/sizeCarousel';
+import WeeklyCarousel from './components/carousel/weeklyCarousel';
 
 export const mainView = 1;
 export const weeklyView = 2;
@@ -30,7 +31,8 @@ function App() {
 
       case weeklyView:
         return (
-          <SwipeableTextMobileStepper returnToMainView={returnToMainView} />
+          <WeeklyCarousel returnToMainView={returnToMainView} />
+          // <SwipeableTextMobileStepper returnToMainView={returnToMainView} />
         );
 
       case sizeView:

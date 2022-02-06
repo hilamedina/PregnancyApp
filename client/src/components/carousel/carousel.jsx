@@ -108,7 +108,7 @@ function SwipeableTextMobileStepper(props) {
           </SwipeableViews>
         </div>
         <MobileStepper
-          steps={maxSteps}
+          steps={maxSteps - 35}
           position="static"
           activeStep={activeStep}
           nextButton={
@@ -116,7 +116,7 @@ function SwipeableTextMobileStepper(props) {
               style={{ color: '#5E4C5A' }}
               size="small"
               onClick={handleNext}
-              disabled={activeStep === maxSteps - 1}
+              // disabled={activeStep === maxSteps - 1}
             >
               Next
               {theme.direction === 'rtl' ? (

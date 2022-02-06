@@ -10,3 +10,9 @@ export const getSizeData = (onSuccess) => {
     console.log(response.data);
   });
 };
+export const getWeeklyData = (onSuccess) => {
+  axios.get('http://localhost:5000/weekly').then((response) => {
+    onSuccess(response.data);
+    console.log(response.data);
+  });
+};
