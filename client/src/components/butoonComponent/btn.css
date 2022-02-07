@@ -1,0 +1,50 @@
+.btn{
+   margin-top:1rem;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding:3%;
+   gap: 15px;
+}
+
+/* .btns {background-image: linear-gradient(to right, bisque 0%, bisque  51%, #eacda3  100%)} */
+
+/* .btns {background-image: linear-gradient(to right, #cea2b0 0%, #afaa9f  51%, #d53369  100%)} */
+.btns {
+   /* background-color:rgb(245, 235, 222); */
+   background-color:transparent;
+
+   text-justify: center;
+   width: 220px;
+  height: 130px;
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   border:1px solid white; 
+   font-size:18px;          
+   border-radius: 10px;
+   cursor: pointer;
+   color:white;
+  
+ }
+  .btns:hover {
+   background-position: right center; /* change the direction of the change here */
+   color:black;
+   text-decoration: none;
+   cursor: pointer;
+ }
+ 
+
+
+   
+         
+
+
+
+      
+
+         

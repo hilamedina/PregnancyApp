@@ -90,7 +90,9 @@ function SwipeableTextMobileStepper(props) {
               bgcolor: '#DEE8D5',
             }}
           >
-            <Typography style={{ color: '#5E4C5A', margin: 'auto' }}>
+            <Typography>
+              {/* <Typography style={{ color: '#5E4C5A', margin: 'auto' }}> */}
+
               {props.data[activeStep].label}
             </Typography>
           </Paper>
@@ -108,14 +110,17 @@ function SwipeableTextMobileStepper(props) {
           </SwipeableViews>
         </div>
         <MobileStepper
-          steps={maxSteps - 35}
+          variant="progress"
+          steps={maxSteps}
           position="static"
           activeStep={activeStep}
+          style={{ backgroundColor: 'transparent' }}
           nextButton={
             <Button
-              style={{ color: '#5E4C5A' }}
-              size="small"
+              style={{ color: 'white', fontWeight: 'bold' }}
+              size="large"
               onClick={handleNext}
+
               // disabled={activeStep === maxSteps - 1}
             >
               Next
@@ -128,7 +133,7 @@ function SwipeableTextMobileStepper(props) {
           }
           backButton={
             <Button
-              style={{ color: '#5E4C5A' }}
+              style={{ color: 'white', fontWeight: 'bold' }}
               size="small"
               onClick={handleBack}
               disabled={activeStep === 0}
@@ -144,7 +149,12 @@ function SwipeableTextMobileStepper(props) {
         />
       </Box>
       {/* האון קליל מקבל את השם שנשלח אליו מסייז קרוסל */}
-      <button onClick={props.returnToMainView}>Back</button>
+      <button
+        style={{ witdth: '20px', height: '20px', display: 'flex' }}
+        onClick={props.returnToMainView}
+      >
+        Back
+      </button>
     </div>
   );
 }
