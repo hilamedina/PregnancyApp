@@ -1,5 +1,4 @@
 body{
-  overflow: hidden;
   height: 100%;
 }
 .App {
@@ -8,13 +7,16 @@ background-image: url('./components/Images/coverbaby.jpg');
   background-size: cover;
   background-repeat: no-repeat, repeat;
   background-position: center;
-  background-color: #E8DBD1;
-  opacity:0.85;
-  height: 100vh;
+  opacity:0.9;
+  height: 100%;
   font-family: Arial, Helvetica, sans-serif;
-  overflow: hidden;
   overflow-y: hidden;
 }
+/* @media  screen(max-width:1000px){
+  overflow-y:scroll;
+} */
+
+
 
 
 

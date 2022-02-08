@@ -31,21 +31,16 @@ function App() {
     switch (view) {
       case mainView:
         return <MainBtnScreen changeView={changeView} />;
-
       case todoView:
         return <AppToDo returnToMainView={returnToMainView} />;
-
       case weeklyView:
         return <WeeklyCarousel returnToMainView={returnToMainView} />;
-
       case sizeView:
         //   צד שמאל זה השם של הפרופס בסייד קרוסל - מי שזה נשלח אליו
         // בצד ימין שם הערך שלו בקובץ הנוכחי
         return <SizeCarousel returnToMainView={returnToMainView} />;
-
       case calendarView:
         return <DatePicker returnToMainView={returnToMainView} />;
-
       case loginView:
         return <LogingPage />;
 
@@ -55,7 +50,13 @@ function App() {
   };
   return (
     <>
-      <header style={{ backgroundColor: '#DABBB3', height: '2.5rem' }}>
+      <header
+        style={{
+          marginBottom: '1rem',
+          backgroundColor: '#DABBB3',
+          height: '2.5rem',
+        }}
+      >
         hila
       </header>
       <div className="App">{getCurrentView()}</div>

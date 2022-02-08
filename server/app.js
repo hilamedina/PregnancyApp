@@ -18,7 +18,7 @@ app.use('/', userRoute);
 const PASSWORD = process.env.PASSWORD;
 
 mongoose.connect(
-  `mongodb+srv://HilaDb:@databaseproject.nwjez.mongodb.net/pregnancyDB?retryWrites=true&w=majority`
+  `mongodb+srv://HilaDb:${PASSWORD}@databaseproject.nwjez.mongodb.net/pregnancyDB?retryWrites=true&w=majority`
 );
 
 // const PORT = process.env.PORT;

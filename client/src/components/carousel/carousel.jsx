@@ -134,7 +134,7 @@ function SwipeableTextMobileStepper(props) {
           backButton={
             <Button
               style={{ color: 'white', fontWeight: 'bold' }}
-              size="small"
+              size="large"
               onClick={handleBack}
               disabled={activeStep === 0}
             >
