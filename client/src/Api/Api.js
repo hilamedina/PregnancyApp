@@ -36,13 +36,19 @@ export const setStatusTodo = (onSuccess, task, isCompleted) => {
 export const removeItem = (onSuccess, task) => {
   const body = { task: task };
   axios.post('http://localhost:5000/todo/delete', body).then((response) => {
+    // console.log(response);
     onSuccess(response.data);
-    console.log(response.data);
   });
 };
 
 export const getWeeklyData = (onSuccess) => {
   axios.get('http://localhost:5000/weekly').then((response) => {
+    onSuccess(response.data);
+    console.log(response.data);
+  });
+};
+export const getMyWeightData = (onSuccess) => {
+  axios.get('http://localhost:5000/myweight').then((response) => {
     onSuccess(response.data);
     console.log(response.data);
   });

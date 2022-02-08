@@ -56,5 +56,12 @@ router.post('/todo/delete', async (req, res) => {
     res.status(400).send({ error: e.message });
   }
 });
+router.post('/myWeight', async (req, res) => {
+  try {
+    res.status(200).send(await req.body);
+  } catch (e) {
+    res.status(400).send({ error: e.message });
+  }
+});
 
 module.exports = router;

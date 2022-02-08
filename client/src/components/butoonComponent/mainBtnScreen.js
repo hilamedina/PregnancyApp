@@ -3,7 +3,13 @@ import React from 'react';
 import CalendarViewMonthIcon from '@mui/icons-material/CalendarViewMonth';
 import MonitorWeightOutlinedIcon from '@mui/icons-material/MonitorWeightOutlined';
 import FormatListBulletedSharpIcon from '@mui/icons-material/FormatListBulletedSharp';
-import { calendarView, sizeView, weeklyView, todoView } from '../../App';
+import {
+  calendarView,
+  sizeView,
+  weeklyView,
+  todoView,
+  myWeightView,
+} from '../../App';
 import MainBtn from './mainBtn';
 import { ClassNames } from '@emotion/react';
 import '../butoonComponent/btn.css';
@@ -31,9 +37,6 @@ const mainBtnScreen = (props) => {
       <div>
         <MainBtn
           onClick={() => {
-            // props.changeView(sizeView);
-          }}
-          onClick={() => {
             props.changeView(todoView);
           }}
           startIcon={<FormatListBulletedSharpIcon />}
@@ -50,7 +53,7 @@ const mainBtnScreen = (props) => {
       <div>
         <MainBtn
           onClick={() => {
-            // props.changeView(sizeView);
+            props.changeView(myWeightView);
           }}
           startIcon={<MonitorWeightOutlinedIcon />}
           name={'My Weigth'}
@@ -60,7 +63,7 @@ const mainBtnScreen = (props) => {
             // props.changeView(sizeView);
           }}
           startIcon={<MonitorWeightOutlinedIcon />}
-          name={'My Weigth'}
+          name={'My Weigth **'}
         />
       </div>
     </div>

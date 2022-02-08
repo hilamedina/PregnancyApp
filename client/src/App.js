@@ -8,6 +8,7 @@ import SizeCarousel from './components/carousel/sizeCarousel';
 import WeeklyCarousel from './components/carousel/weeklyCarousel';
 // import AppToDo from './components/todo/appToDo';
 import AppToDo from './components/todo/appToDo';
+import MyWeight from './components/myWeight/appMyWeight';
 
 export const mainView = 1;
 export const weeklyView = 2;
@@ -15,6 +16,7 @@ export const sizeView = 3;
 export const calendarView = 4;
 export const loginView = 5;
 export const todoView = 6;
+export const myWeightView = 7;
 
 function App() {
   const [view, setView] = useState(mainView);
@@ -41,6 +43,8 @@ function App() {
         return <SizeCarousel returnToMainView={returnToMainView} />;
       case calendarView:
         return <DatePicker returnToMainView={returnToMainView} />;
+      case myWeightView:
+        return <MyWeight returnToMainView={returnToMainView} />;
       case loginView:
         return <LogingPage />;
 
@@ -50,15 +54,15 @@ function App() {
   };
   return (
     <>
-      <header
+      {/* <header
         style={{
-          marginBottom: '1rem',
+          // marginBottom: '1rem',
           backgroundColor: '#DABBB3',
-          height: '2.5rem',
+          height: '2rem',
         }}
       >
         hila
-      </header>
+      </header> */}
       <div className="App">{getCurrentView()}</div>
       {/* <AppToDo /> */}
     </>

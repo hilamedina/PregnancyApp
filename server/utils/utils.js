@@ -1,6 +1,7 @@
 const Size = require('../model/sizeModel');
 const Weekly = require('../model/weeklyModel');
 const Todo = require('../model/todoModel');
+const MyWeight = require('../model/myWeight');
 
 const getAllSize = async () => {
   return await Size.find();
@@ -8,9 +9,15 @@ const getAllSize = async () => {
 const getAllWeekly = async () => {
   return await Weekly.find();
 };
-const getTodoListForUsers = async (body = '') => {
-  return await Todo.find({ userId: body.userId });
+const getTodoListForUsers = async (body) => {
+  return await Todo.find();
 };
+const getMyWeightForUsers = async (body) => {
+  return await MyWeight.find();
+};
+
+// return await Todo.find({ userId: body.userId });
+
 const addNewTodo = async (body) => {
   const newTodo = new Todo({
     userId: body.userId,
@@ -36,7 +43,9 @@ const setTodoStatus = async (body) => {
 
 const removeTodoItem = async (body) => {
   await Todo.deleteOne({ task: body.task });
-  return getTodoListForUsers();
+  console.log(getTodoListForUsers(body));
+
+  return getTodoListForUsers(body);
 };
 
 module.exports = {
@@ -46,4 +55,5 @@ module.exports = {
   addNewTodo,
   setTodoStatus,
   removeTodoItem,
+  getMyWeightForUsers,
 };
