@@ -5,12 +5,14 @@ const weekly = require('../model/weeklyModel');
 const todo = require('../model/todoModel');
 
 const {
+  getMyWeightForUsers,
   getAllSize,
   getAllWeekly,
   setTodoStatus,
   addNewTodo,
   getTodoListForUsers,
   removeTodoItem,
+  addNewWeight,
 } = require('../utils/utils');
 
 router.get('/size', async (req, res) => {
@@ -56,9 +58,16 @@ router.post('/todo/delete', async (req, res) => {
     res.status(400).send({ error: e.message });
   }
 });
-router.post('/myWeight', async (req, res) => {
+router.get('/myWeight', async (req, res) => {
   try {
-    res.status(200).send(await req.body);
+    res.status(200).send(await getMyWeightForUsers(req.body));
+  } catch (e) {
+    res.status(400).send({ error: e.message });
+  }
+});
+router.post('/todo/addWeight', async (req, res) => {
+  try {
+    res.status(200).send(await addNewWeight(req.body));
   } catch (e) {
     res.status(400).send({ error: e.message });
   }

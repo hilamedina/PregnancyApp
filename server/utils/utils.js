@@ -48,7 +48,18 @@ const removeTodoItem = async (body) => {
   return getTodoListForUsers(body);
 };
 
+const addNewWeight = async (body) => {
+  const newMyWeight = new myWeight({
+    userId: body.userId,
+    weight: body.weight,
+    week: body.week,
+  });
+  await newMyWeight.save();
+  return getMyWeightForUsers(body);
+};
+
 module.exports = {
+  addNewWeight,
   getAllSize,
   getAllWeekly,
   getTodoListForUsers,

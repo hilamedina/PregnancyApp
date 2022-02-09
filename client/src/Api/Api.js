@@ -53,3 +53,11 @@ export const getMyWeightData = (onSuccess) => {
     console.log(response.data);
   });
 };
+
+export const addMyWeight = (onSuccess, weight, week) => {
+  const body = { userId: '1', weight: weight, week: week };
+  axios.post('http://localhost:5000/todo/add', body).then((response) => {
+    onSuccess(response.data);
+    console.log(response.data);
+  });
+};
