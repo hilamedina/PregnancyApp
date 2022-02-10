@@ -49,10 +49,10 @@ const removeTodoItem = async (body) => {
 };
 
 const addNewWeight = async (body) => {
-  const newMyWeight = new myWeight({
+  const newMyWeight = new MyWeight({
     userId: body.userId,
     weight: body.weight,
-    week: body.week,
+    date: new Date().toISOString().replace(/T/, ' ').replace(/\..+/, ''),
   });
   await newMyWeight.save();
   return getMyWeightForUsers(body);

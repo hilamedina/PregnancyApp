@@ -14,7 +14,9 @@ function TodoForm({ addTodo }) {
   return (
     <form onSubmit={handleSubmit}>
       <input
+        className="input"
         type="text"
+        placeholder="Task:"
         className="input"
         value={value}
         onChange={(e) => setValue(e.target.value)}

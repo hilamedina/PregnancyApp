@@ -65,6 +65,7 @@ function App() {
       </header> */}
       <div className="App">{getCurrentView()}</div>
       {/* <AppToDo /> */}
+      {/* <LogingPage /> */}
     </>
   );
 }

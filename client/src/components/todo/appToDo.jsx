@@ -40,7 +40,7 @@ const AppToDo = (props) => {
   return (
     <>
       <div className="app">
-        <div className="todo-list">
+        <div className="list">
           {todoData.map((todo, index) => (
             <TodoItem
               key={index}
@@ -52,8 +52,8 @@ const AppToDo = (props) => {
           ))}
           <TodoForm addTodo={addTodo} />
         </div>
-        <button onClick={props.returnToMainView}>Back</button>
       </div>
+      <button onClick={props.returnToMainView}>Back</button>
     </>
   );
 };

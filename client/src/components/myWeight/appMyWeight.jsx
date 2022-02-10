@@ -2,33 +2,35 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { getMyWeightData, addMyWeight } from '../../Api/Api';
 import MyWeightForm from './myWeightForm';
-import myWeightItem from './myWeightItem';
+import MyWeightItem from './myWeightItem';
 import '../myWeight/myWeight.css';
 
 const AppmyWeight = (props) => {
-  const myWeight = (weight, week) => {
-    addMyWeight(setmyWeightData, weight, week);
+  const myWeight = (weight) => {
+    addMyWeight(setmyWeightData, weight);
   };
 
   const [myWeightData, setmyWeightData] = useState([]);
   useEffect(() => {
-    getMyWeightData(myWeightData);
+    getMyWeightData(setmyWeightData);
   }, []);
+
+  console.log(myWeightData);
   return (
     <>
       <div className="weight-list">
         {myWeightData.map((userWeight, index) => (
-          <myWeightItem
+          <MyWeightItem
             key={index}
             index={index}
             userWeight={userWeight}
-            completeTodo={myWeight}
+            // completeTodo={myWeight}
             // removeTodo={deleteTodoItem}
           />
         ))}
       </div>
       <div>
-        <MyWeightForm addMyWeight={myWeight} />
+        <MyWeightForm myWeight={myWeight} />
       </div>
       <div>
         <button onClick={props.returnToMainView}>Back</button>

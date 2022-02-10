@@ -1,17 +1,12 @@
 import React from 'react';
 import '../myWeight/myWeight.css';
 
-function MyWeightItem({ userWeight, index, completeTodo }) {
+function MyWeightItem({ userWeight, index }) {
+  console.log(userWeight.date);
   return (
-    <div
-      className="weight"
-      // style={{ textDecoration: todo.isCompleted ? 'line-through' : '' }}
-    >
-      {userWeight.wieght}
-      <div>
-        <button onClick={() => completeTodo(index)}>addWeight</button>
-        {/* <button onClick={() => removeTodo(index)}>x</button> */}
-      </div>
+    <div className="weight">
+      {/* {userWeight.weight} */}
+      <div>{userWeight.date}</div>
     </div>
   );
 }

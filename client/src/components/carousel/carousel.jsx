@@ -8,6 +8,7 @@ import Button from '@mui/material/Button';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
+
 // import { autoPlay } from 'react-swipeable-views-utils';
 // const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -36,10 +37,10 @@ function SwipeableTextMobileStepper(props) {
   const getGalleryItem = (activeStep, step, index) => {
     if (Math.abs(activeStep - index) <= 2) {
       return (
-        <>
+        <div className="carousle.conti" style={{ marginBottom: '100px' }}>
           <Box
             sx={{
-              height: '500px',
+              height: '400px',
               display: 'block',
               maxWidth: '100%',
               overflow: 'hidden',
@@ -48,7 +49,7 @@ function SwipeableTextMobileStepper(props) {
           >
             {props.getDataStyleElement(step)}
           </Box>
-        </>
+        </div>
       );
     }
 
@@ -67,34 +68,37 @@ function SwipeableTextMobileStepper(props) {
     >
       <Box
         sx={{
-          maxWidth: 400,
+          maxWidth: 470,
           flexGrow: 1,
         }}
       >
         <div
           style={{
-            backgroundColor: '#DEE8D5',
-            border: '2px black solid',
-            borderRadius: '10px',
+            marginTop: '100px',
+            backgroundColor: 'rgba(255, 255, 255, 0.3)',
+            borderRadius: '30px',
+            opacity: 1,
           }}
         >
           <Paper
-            square
-            elevation={0}
+            //   square
+            //   elevation={0}
             sx={{
-              display: 'flex',
-              alignItems: 'center',
-              height: 50,
-              width: 375,
-              pl: 2,
-              bgcolor: '#DEE8D5',
+              //     display: 'flex',
+              //     alignItems: 'center',
+              //     height: 50,
+              //     width: 375,
+
+              //     pl: 2,
+              //     marginRight: '20px',
+              //     border: 'none',
+              backgroundColor: 'rgba(206,205,201,0.3)',
             }}
           >
-            <Typography>
-              {/* <Typography style={{ color: '#5E4C5A', margin: 'auto' }}> */}
-
-              {props.data[activeStep].label}
-            </Typography>
+            {/* <Typography> */}
+            {/* <Typography style={{ color: '#5E4C5A', margin: 'auto' }}> */}
+            {/* </Typography> */}
+            {props.data[activeStep].label}
           </Paper>
           <SwipeableViews
             axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}

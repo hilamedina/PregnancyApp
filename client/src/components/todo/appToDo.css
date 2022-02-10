@@ -1,23 +1,49 @@
 .app {
- height: 100vh;
     padding: 30px;
+    display:flex;
+    justify-content: center; 
   }
-  
-  .todo-list {
-    background: #e8e8e8;
+  .list {
+    width:400px;
     border-radius: 4px;
     max-width: 400px;
     padding: 5px;
+    /* border:red 2px  solid; */
   }
-  
   .todo {
+    height:35px;
     align-items: center;
-    background: #fff;
-    border-radius: 3px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.3);
+    border:3px solid rgb(222,189,161,0.8);
+    border-radius: 8px;
     display: flex;
-    font-size: 12px;
+    font-size: 14px;
     justify-content: space-between;
     margin-bottom: 6px;
-    padding: 3px 10px;
+    padding: 4px 10px;
+
   }
+  .btn-todo1{
+    border:none;
+    width:60px;
+    border-radius:8px;
+    background-color:rgba(255, 255, 255, 0.3);
+    padding:5px;
+
+
+  }
+    .btn-todo2{
+    border:none;
+    width:30px;
+    border-radius:8px;
+    padding:3px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-left:5px;
+  }
+  .input{
+    background-color: rgba(255, 255, 255, 0.3);
+    border:3px solid rgb(222,189,161,0.8);
+
+  }
+
+ 

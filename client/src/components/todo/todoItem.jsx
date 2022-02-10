@@ -8,9 +8,13 @@ function TodoItem({ todo, index, completeTodo, removeTodo }) {
       style={{ textDecoration: todo.isCompleted ? 'line-through' : '' }}
     >
       {todo.task}
-      <div>
-        <button onClick={() => completeTodo(index)}>Status</button>
-        <button onClick={() => removeTodo(index)}>x</button>
+      <div className="two-btn">
+        <button className="btn-todo1" onClick={() => completeTodo(index)}>
+          👌🏽
+        </button>
+        <button className="btn-todo2" onClick={() => removeTodo(index)}>
+          🗑
+        </button>
       </div>
     </div>
   );

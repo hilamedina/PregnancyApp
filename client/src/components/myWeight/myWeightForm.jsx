@@ -1,13 +1,17 @@
 import React from 'react';
 import { useState } from 'react';
 import '../myWeight/myWeight.css';
-function MyWeightForm({ addTodo }) {
+
+function MyWeightForm({ myWeight }) {
+  // console.log(addMyWeight);
+  console.log(myWeight);
   const [value, setValue] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!value) return;
-    addTodo(value);
+    console.log(value);
+    myWeight(value);
     setValue('');
   };
 

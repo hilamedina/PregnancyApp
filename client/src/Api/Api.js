@@ -48,7 +48,7 @@ export const getWeeklyData = (onSuccess) => {
   });
 };
 export const getMyWeightData = (onSuccess) => {
-  axios.get('http://localhost:5000/myweight').then((response) => {
+  axios.get('http://localhost:5000/myWeight').then((response) => {
     onSuccess(response.data);
     console.log(response.data);
   });
@@ -56,8 +56,13 @@ export const getMyWeightData = (onSuccess) => {
 
 export const addMyWeight = (onSuccess, weight, week) => {
   const body = { userId: '1', weight: weight, week: week };
-  axios.post('http://localhost:5000/todo/add', body).then((response) => {
-    onSuccess(response.data);
-    console.log(response.data);
-  });
+
+  axios
+    .post('http://localhost:5000/addWeight', body)
+    .then((response) => {
+      console.log(response);
+      onSuccess(response.data);
+      console.log(response.data);
+    })
+    .catch((error) => console.log(error.response));
 };

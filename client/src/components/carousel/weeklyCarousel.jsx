@@ -31,7 +31,7 @@ const getStyleElement = (step) => {
             alignItems: 'center',
             width: '150px',
             height: '100px',
-            color: '#5E4C5A',
+            color: 'white',
             marginRight: '10px',
           }}
         >

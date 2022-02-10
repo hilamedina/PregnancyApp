@@ -65,10 +65,11 @@ router.get('/myWeight', async (req, res) => {
     res.status(400).send({ error: e.message });
   }
 });
-router.post('/todo/addWeight', async (req, res) => {
+router.post('/addWeight', async (req, res) => {
   try {
     res.status(200).send(await addNewWeight(req.body));
   } catch (e) {
+    console.log('check');
     res.status(400).send({ error: e.message });
   }
 });
