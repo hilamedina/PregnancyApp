@@ -22,32 +22,50 @@ const Calender = (props) => {
       end: moment(event.end).toDate(),
       title: event.title,
     });
-    calendarApi.next();
+    // calendarApi.next();
   };
 
   async function handleEventAdd(data) {
-    await axios.post('/create-event', data.event);
+    await axios.post(
+      'http://localhost:5000/api/calandar/create-event',
+      data.event
+    );
   }
   async function handleDatesSet(data) {
-    const response = await axios.get(
-      '/find-event?start=' +
-        moment(data.start).toISOString() +
-        '&end=' +
-        moment(data.end).toISOString(),
-      setEvents(response.data)
+    const { data: events } = await axios.get(
+      `http://localhost:5000/api/calandar/get-event?start=${moment(
+        data.start
+      ).toISOString()}&end=${moment(data.end).toISOString()}`
     );
+    console.log(events);
+    setEvents(events);
+  }
+  async function getEvents(data) {
+    const { data: events } = await axios.get(
+      `http://localhost:5000/api/calandar/events`
+    );
+    console.log(events);
+    setEvents(events);
   }
   return (
     <div>
-      <section style={{ display: 'flex', width: '70vw', height: '70vh' }}>
+      <section
+        style={{
+          padding: '10px',
+          height: '70vh',
+          width: '70vw',
+          margin: 'auto',
+        }}
+      >
+        <button onClick={props.returnToMainView}>Back</button>
         <button onClick={() => setModalOpen(true)}>Add Event</button>
         <FullCalendar
           ref={calendarRef}
           events={events}
           plugins={[dayGridPlugin]}
           initialView="dayGridMonth"
-          eventAdd={(event) => handleEventAdd(event)}
-          dateSet={(date) => handleDatesSet(date)}
+          eventAdd={async (event) => await handleEventAdd(event)}
+          datesSet={async () => await getEvents()}
         />
         <div style={{ position: 'relative', zIndex: 0 }}>
           <AddEventModal
@@ -57,9 +75,9 @@ const Calender = (props) => {
           ></AddEventModal>
         </div>
       </section>
-      <div>
+      {/* <div>
         <button onClick={props.returnToMainView}>Back</button>
-      </div>
+      </div> */}
     </div>
   );
 

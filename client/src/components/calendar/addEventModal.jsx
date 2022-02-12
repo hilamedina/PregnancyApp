@@ -5,7 +5,7 @@ import { useState } from 'react';
 import Modal from 'react-modal';
 import 'react-datetime/css/react-datetime.css';
 
-const AddEventModal = ({ isOpen, onClose, onEventAdded }) => {
+const AddEventModal = ({ isOpen, isClose, onEventAdded }) => {
   const [title, setTitle] = useState('');
   const [start, setStart] = useState(new Date());
   const [end, setEnd] = useState(new Date());
@@ -17,11 +17,11 @@ const AddEventModal = ({ isOpen, onClose, onEventAdded }) => {
       start,
       end,
     });
-    onClose();
+    isClose();
   };
   return (
     <div>
-      <Modal isOpen={isOpen} onRequestedClose={onClose} ariaHideApp={false}>
+      <Modal isOpen={isOpen} onRequestedClose={isClose} ariaHideApp={false}>
         <form onSubmit={onSubmit}>
           <input
             placeholder="Title"

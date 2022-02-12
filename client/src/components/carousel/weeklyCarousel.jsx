@@ -13,10 +13,8 @@ const getStyleElement = (step) => {
         style={{
           wordSpacing: '4px',
           boxSizing: 'border-box',
-          // border: 'yellow 3px solid',
         }}
       >
-        {/* <div>{step.label}</div> */}
         <br />
         <br />
         <p

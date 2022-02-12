@@ -66,3 +66,16 @@ export const addMyWeight = (onSuccess, weight, week) => {
     })
     .catch((error) => console.log(error.response));
 };
+
+export const createUser = (onSuccess, email, password) => {
+  const body = { userId: '1', email: email, password: password };
+
+  axios
+    .post('http://localhost:5000/api/users', body)
+    .then((response) => {
+      console.log(response);
+      onSuccess(response.data);
+      console.log(response.data);
+    })
+    .catch((error) => console.log(error.response));
+};

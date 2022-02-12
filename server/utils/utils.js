@@ -4,7 +4,8 @@ const Size = require('../model/sizeModel');
 const Weekly = require('../model/weeklyModel');
 const Todo = require('../model/todoModel');
 const MyWeight = require('../model/myWeight');
-// const User = require('../model/userModel');
+const User = require('../model/userModel');
+const MyEvent = require('../model/eventModel');
 
 const getAllSize = async () => {
   return await Size.find();
@@ -20,11 +21,16 @@ const getMyWeightForUsers = async (body) => {
 };
 
 // return await Todo.find({ userId: body.userId });
-const getMyEvent = async (body) => {
-  return await MyEvent.find({
-    start: { $gte: moment(req.query.start).toDate() },
-    end: { $lte: moment(req.query.start).toDate() },
+
+const getMyEvent = async (queries) => {
+  const { start, end } = queries;
+  console.log('query:', start, end);
+  const myEvent = await MyEvent.find({
+    start: { $gte: moment(start).toDate() },
+    end: { $lte: moment(end).toDate() },
   });
+  console.log(myEvent);
+  return myEvent;
 };
 
 const addNewTodo = async (body) => {
@@ -67,22 +73,11 @@ const addNewWeight = async (body) => {
   return getMyWeightForUsers(body);
 };
 
-const addNewEvent = async (body) => {
-  const newMyEvent = new MyEvent({
-    start: Date,
-    end: Date,
-    title: String,
-  });
-  await newMyEvent.save();
+const addNewEvent = async (event) => {
+  const newMyEvent = new MyEvent(event);
+  const newEvent = await newMyEvent.save();
+  return newEvent;
 };
-// const registerUser = async (req, res) => {
-//   const { name, email, password } = req.body;
-//   // const name = req.body.name;
-//   res.json({
-//     name,
-//     email,
-//   });
-// };
 
 module.exports = {
   // registerUser,

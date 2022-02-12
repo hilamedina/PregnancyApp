@@ -32,11 +32,6 @@ const AppToDo = (props) => {
     getTodoData(setTodoData);
   }, []);
 
-  // useEffect(() => {
-  //   if (todoData.length === 0) {
-  //     getTodoData(setTodoData);
-  //   }
-
   return (
     <>
       <div className="app">
