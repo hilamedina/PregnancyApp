@@ -76,21 +76,9 @@ const SizeCarousel = (props) => {
   );
 };
 
-// const WeeklyCarousel = (props) => {
-//   const [weeklyData, setWeeklyData] = useState([]);
-//   useEffect(() => {
-//     getWeeklyData(setWeeklyData);
-//   }, []);
-//   return (
-//     <SwipeableTextMobileStepper
-//       data={images}
-//       data={weeklyData}
 //       // צד שמאל זה השם של הפרופס בסוויפבל - מי שזה נשלח אליו
 //       //צד ימין זה איך שזה נקרא מהקובץ הזה - שקיבהלתי מהאפ כי הפונקציה במקרה הזה כתובה שם
 //       returnToMainView={props.returnToMainView}
 //       getDataStyleElement={getStyleElement1}
-//     />
-//   );
-// };
 
 export default SizeCarousel;

@@ -19,22 +19,12 @@ function MyWeightForm({ myWeight }) {
     <div className="form">
       <form onSubmit={handleSubmit}>
         <input
-          // type="text"
           inputmode="numeric"
           placeholder="Enter your weight"
           className="input"
           value={value}
           onChange={(e) => setValue(e.target.value)}
         />
-        {/* <br />
-        <input
-          type="text"
-          inputmode="numeric"
-          placeholder="Enter your week"
-          className="input"
-          value={value}
-          onChange={(e) => setValue(e.target.value)}
-        /> */}
       </form>
     </div>
   );

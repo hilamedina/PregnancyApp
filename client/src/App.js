@@ -1,4 +1,7 @@
 import './App.css';
+// import modal from 'react-modal';
+import Calendar from './components/calendar/calendar';
+import 'react-datetime/css/react-datetime.css';
 import LogingPage from './components/LoginPage/LoginPage';
 import SwipeableTextMobileStepper from './components/carousel/carousel';
 import DatePicker from './components/datepicker/datePicker';
@@ -9,6 +12,8 @@ import WeeklyCarousel from './components/carousel/weeklyCarousel';
 // import AppToDo from './components/todo/appToDo';
 import AppToDo from './components/todo/appToDo';
 import MyWeight from './components/myWeight/appMyWeight';
+import { withMobileDialog } from '@material-ui/core';
+// import { Modal } from '@mui/material';
 
 export const mainView = 1;
 export const weeklyView = 2;
@@ -42,7 +47,7 @@ function App() {
         // בצד ימין שם הערך שלו בקובץ הנוכחי
         return <SizeCarousel returnToMainView={returnToMainView} />;
       case calendarView:
-        return <DatePicker returnToMainView={returnToMainView} />;
+        return <Calendar returnToMainView={returnToMainView} />;
       case myWeightView:
         return <MyWeight returnToMainView={returnToMainView} />;
       case loginView:
@@ -58,11 +63,9 @@ function App() {
         style={{
           // marginBottom: '1rem',
           backgroundColor: '#DABBB3',
-          height: '2rem',
+          height: '2.3rem',
         }}
-      >
-        hila
-      </header> */}
+      ></header> */}
       <div className="App">{getCurrentView()}</div>
       {/* <AppToDo /> */}
       {/* <LogingPage /> */}

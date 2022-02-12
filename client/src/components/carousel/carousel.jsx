@@ -8,6 +8,7 @@ import Button from '@mui/material/Button';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
+import '../butoonComponent/btn.css';
 
 // import { autoPlay } from 'react-swipeable-views-utils';
 // const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
@@ -81,25 +82,28 @@ function SwipeableTextMobileStepper(props) {
           }}
         >
           <Paper
-            //   square
-            //   elevation={0}
-            sx={{
-              //     display: 'flex',
-              //     alignItems: 'center',
-              //     height: 50,
-              //     width: 375,
+          //   square
+          //   elevation={0}
+          // sx={{
+          //     display: 'flex',
+          //     alignItems: 'center',
+          //     height: 50,
+          //     width: 375,
 
-              //     pl: 2,
-              //     marginRight: '20px',
-              //     border: 'none',
-              backgroundColor: 'rgba(206,205,201,0.3)',
-            }}
+          //     pl: 2,
+          //     marginRight: '20px',
+          //     border: 'none',
+          // border:"2px red solid "
+          // backgroundColor: 'rgba(206,205,201,0.3)',
+          // marginTop: '50px',
+          // }}
           >
-            {/* <Typography> */}
-            {/* <Typography style={{ color: '#5E4C5A', margin: 'auto' }}> */}
-            {/* </Typography> */}
-            {props.data[activeStep].label}
+            {/* <Typography> 
+            <Typography style={{ color: '#5E4C5A', margin: 'auto' }}>
+             </Typography> */}
           </Paper>
+          {props.data[activeStep].label}
+          <div style={{ marginBottom: '30px' }}></div>
           <SwipeableViews
             axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
             index={activeStep}

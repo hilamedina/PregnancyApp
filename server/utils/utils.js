@@ -1,7 +1,10 @@
+const moment = require('moment');
+// const asyncHandler = require('express-async-handler');
 const Size = require('../model/sizeModel');
 const Weekly = require('../model/weeklyModel');
 const Todo = require('../model/todoModel');
 const MyWeight = require('../model/myWeight');
+// const User = require('../model/userModel');
 
 const getAllSize = async () => {
   return await Size.find();
@@ -17,6 +20,12 @@ const getMyWeightForUsers = async (body) => {
 };
 
 // return await Todo.find({ userId: body.userId });
+const getMyEvent = async (body) => {
+  return await MyEvent.find({
+    start: { $gte: moment(req.query.start).toDate() },
+    end: { $lte: moment(req.query.start).toDate() },
+  });
+};
 
 const addNewTodo = async (body) => {
   const newTodo = new Todo({
@@ -58,7 +67,27 @@ const addNewWeight = async (body) => {
   return getMyWeightForUsers(body);
 };
 
+const addNewEvent = async (body) => {
+  const newMyEvent = new MyEvent({
+    start: Date,
+    end: Date,
+    title: String,
+  });
+  await newMyEvent.save();
+};
+// const registerUser = async (req, res) => {
+//   const { name, email, password } = req.body;
+//   // const name = req.body.name;
+//   res.json({
+//     name,
+//     email,
+//   });
+// };
+
 module.exports = {
+  // registerUser,
+  getMyEvent,
+  addNewEvent,
   addNewWeight,
   getAllSize,
   getAllWeekly,

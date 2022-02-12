@@ -34,6 +34,8 @@
   height: 60px;
   border-radius: 50%;
   background: #f1f1f1;
+  background:red;
+
   border: 1px solid rgba(34, 34, 34, 0.287);
   position: absolute;
   display: flex;
@@ -76,4 +78,7 @@
 }
 .dot.active {
   background: rgb(32, 32, 32);
+}
+.css-5xe99f-MuiLinearProgress-bar1{
+background-color: black ;
 }

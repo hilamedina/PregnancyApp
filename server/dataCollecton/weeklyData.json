@@ -1,7 +1,162 @@
 [
+  {
+    "label": "Baby at 1 Week",
+    "description": "No, there’s no baby or embryo in sight. At least not yet — just an anxious egg and a whole bunch of eager sperm at their respective starting gates.\n But in weeks 1 and 2 of pregnancy — the week of and immediately following your last menstrual period — your body is working hard to gear up for the event that paves the way for baby: the big O, or ovulation.\nRight now, your uterus has begun preparing for the arrival of a fertilized egg, though you won't know for sure if that egg has successfully matched up with sperm until next month.\n" 
+    },
     {
-      "weekNumber": 1,
-      "label": "Baby at 1 Week",
-      "description": "Believe it or not, your pregnancy journey begins now,\n even though you’re not actually pregnant yet.\n That’s because most practitioners start timing pregnancy based \n on the first day of your last menstrual period"
+      "label": "Baby at 2 Week",
+      "description": "No, there’s no baby or embryo in sight. At least not yet — just an anxious egg and a whole bunch of eager sperm at their respective starting gates.\n But in weeks 1 and 2 of pregnancy — the week of and immediately following your last menstrual period — your body is working hard to gear up for the event that paves the way for baby: the big O, or ovulation.\nRight now, your uterus has begun preparing for the arrival of a fertilized egg, though you won't know for sure if that egg has successfully matched up with sperm until next month.\n" 
+      },
+    {
+      "label": "Baby at 3 Week",
+      "description": "You ovulated this week, and the moment you’ve been waiting for has finally arrived: You’ve conceived! Meaning your soon-to-be-fetus has started on its miraculous transformation from solitary cell to bouncing baby boy or girl.\n Once the winning sperm makes its way through the egg's outer layer, the single-cell fertilized egg — or zygote — immediately forms a barrier to keep other sperm out.\nBut your zygote doesn't stay single for long. Within hours, it divides into two cells, then four, and so on, until the growing cluster comprises around 100 cells just a few days after that crucial first meeting between sperm and egg. Some will form the embryo, others the placenta, but for now, it’s still just one microscopic ball of cells that’s one-fifth of the size of the period at the end of this sentence.\n "
+      },
+      {
+        "label": "Baby at 4 Week",
+        "description": "While you may have just started to wonder whether you're pregnant, your soon-to-be baby has already found its home: The blastocyst has completed its journey from your fallopian tube to your uterus.\n Once there, it burrows into your uterine lining and implants — making that unbreakable connection to you that'll last the next eight months (and a lifetime after that).\n As soon as that little ball of cells is settled in your uterus, it will undergo the great divide, splitting into two groups. Half of what's now called the embryo will become your son or daughter, while the other half forms the placenta, your baby's lifeline — which channels nutrients and carries waste away until delivery.\n"
+        }, {
+          "label": "Baby at 5 Week",
+          "description": "It takes a lot of developing to become a baby — all the major and minor bodily systems (digestive, circulatory, nervous and so on) and organs, like the heart, lungs and stomach, have to form from scratch.\n The first system to be operational is the circulatory system, or blood — along with its companion organ, the heart, which you may even be able to see beating on an early ultrasound toward the end of the week, though it's more commonly visible at week 6 or 7.\n When you're 5 weeks pregnant, your baby's heart is made up of two tiny channels called heart tubes and they're already hard at work. When those tubes fuse together, your baby will have a fully functioning heart, though he almost certainly has his grip on yours already!\n"
+          },
+      {
+      "label": "Baby at 6 Week",
+      "description": "You might be coping with full-blown pregnancy symptoms, but there's plenty of good news too. The folds of tissue in the prominent bump on top — the head — are developing into your baby's jaw, cheeks and chin, which will eventually become one adorable face.\n And are those little indentations on both sides of the head the sweet dimples you always hoped your baby would inherit from your mom's side of the family? No, they're ear canals in the making. Small dots on the face will form the eyes and button nose in a few weeks.\n Also taking shape this week: your baby's kidneys, liver and lungs, along with his little heart, which is now beating about 110 times a minute (and getting faster every day).\n"
+      },
+      {
+        "label": "Baby at 7 Week",
+        "description": "Your baby's approximately a quarter of an inch in length now — about the size of a blueberry. Sounds pretty tiny still? Consider this for a little perspective: Your baby is 10,000 times bigger now than she was at conception a month ago.\n And talking about buds, your baby is going out on a limb this week. Her arm and leg buds begin to sprout and grow longer and stronger, dividing into hand, arm and shoulder segments and leg, knee and foot segments — though the limb buds look more like paddles than hands or feet at this early stage.\n Also forming this week are your baby's mouth and tongue. The kidneys are in place now, too, and are poised to begin their important work of waste management. Soon, your baby will start producing urine. Lucky for you, there's no need for diapers yet. "
+       },
+       {
+        "label": "Baby at 8 Week",
+        "description": "Meanwhile, how big baby is has become a bit harder to estimate. Though growth occurs at about the rate of a millimeter a day, it isn't necessarily just in height. Spurts can happen in the arms, legs, back and other parts of that tiny body, meaning big changes are coming every which way in the next few months.\n What else is changing at 8 weeks pregnant? A close-up view of your little embryo would reveal your baby is looking a lot less reptilian and a lot more baby-like.\n Even though baby has webbed hands and feet, teeny fingers and toes are just starting to differentiate and the tail is almost gone. You'd see an upper lip forming, the protruding tip of that cute button nose and tiny, very thin eyelids."
+      },
+      {
+        "label": "Baby at 9 Week",
+        "description": "The head has straightened out and is more fully developed and the ears are continuing to grow, making baby look more human. Plus, toes are visible, and all of baby's essential organs, like the heart, brain, kidneys, liver and lungs, have begun to develop.\n The arms and legs in your soon-to-be-fetus are also spontaneously moving now that minuscule muscles are beginning to develop, though you won't feel your tiny dancer for at least another month or two.\n While it's way too early to feel anything, it's not too early to possibly hear something. Your baby's heart is developed enough — and has grown large enough — for its beats to be heard with a Doppler, a handheld ultrasound device that amplifies the lub-dub sound the heart makes."
+      },
+      {
+        "label": "Baby at 10 Week",
+        "description": "Congratulations! Your baby has officially graduated this week from embryo to fetus.\n Your baby is really taking a human shape now. Bones and cartilage are forming and small indentations on the legs are developing into knees and ankles. The arms, complete with elbows, can flex already — how's that for magical?\n Still, don't run to the store for a baseball bat just yet. Though your baby's arms are taking shape and getting stronger, each one is still teeny-tiny.\n The tooth bud fairy is making an appearance this week, heralding the arrival of your baby's little choppers, which are forming under the gums. But those pearly whites won't break through the gums until your baby is close to 6 months old."
+      },
+      {
+        "label": "Baby at 11 Week",
+        "description": "Hair follicles are forming not just on the crown, but on the rest of the body. And those tiny hands and feet have individual fingers and toes — meaning goodbye to those frog-like webbed hands and feet.\n Meanwhile, fingernail and toenail beds begin to develop this week; in the next few weeks, the nails themselves will start to grow, so don't forget to add a baby nail clipper to your to-buy list.\n While you can't tell what baby's sex will be yet, ovaries are developing if it's a girl.\n And by week 11 of pregnancy, baby has other distinct human characteristics: hands and feet in front of his body, ears nearly in their final shape, open nasal passages on the tip of his tiny nose, a tongue and palate in the mouth, and visible nipples. \n"
+      },
+      {
+        "label": "Baby at 12 Week",
+        "description": "This week marks a turning point for your baby. At 12 weeks pregnant, the Herculean task of developing new bodily structures is nearing an end, as most of your baby's systems are fully formed — though there's still plenty of maturing to do.\nNow comes the maintenance phase, during which your fetus' systems continue to evolve for the next 28 weeks and the organs get to work. For one thing, the fetal digestive system is beginning to flex its muscles — literally — as it starts practicing contraction movements, a skill your little peanut will need after birth to push food through the digestive tract.\nThe bone marrow is busy making white blood cells — weapons that will one day help your baby fight infection once she's out of your safe haven and in a regular play group. And the pituitary gland at the base of the brain has started producing the hormones that'll enable her to make babies of her own in a few decades or so.\n"
+      },
+      {
+        "label": "Baby at 13 Week",
+        "description": "What else is going on in there? At 13 weeks pregnant, tiny bones are beginning to form in his arms and legs. Because he can move them in a jerky fashion, he may be able to get his thumb into his mouth soon — a habit that may come in handy for self-soothing when he's a newborn.\nYour baby's intestines are also in for some big changes. Until recently, they've been growing in a cavity inside the umbilical cord, but they've just moved into their permanent — and more conveniently located — address, in your baby's abdomen. And to serve your growing fetus' needs, the placenta is also growing, eventually weighing 1 to 2 pounds at birth.\n Also developing this week: your baby's vocal cords (the first step toward saying, I love you, Mommy!). You obviously can't hear him crying or cooing just yet, but you can bet that little voice will get a good workout once he's born.\n"
+      },
+      {
+        "label": "Baby at 14 Week",
+        "description": "By week 14 of pregnancy, your baby could be sprouting some hair and those eyebrows are filling in too.\n Hair growth isn't limited to baby's head, though. She is also covered with a downy coating of hair called lanugo, largely there for warmth.\n But it won't be there forever. As fat accumulates later on in your pregnancy — the baby's fat, not yours — it will take over the function of keeping your little bean toasty, so most of the lanugo sheds. Some babies, especially those born early, still have a fuzzy coating at delivery, but it disappears soon afterward.\n Other developments this week include a roof of her own — inside your baby's mouth, that is — as well as some digestive system activity: Her intestines are producing meconium, which is the waste that will make up her first bowel movement after birth.\n"
+      },
+      {
+        "label": "Baby at 15 Week",
+        "description": "So what keeps your baby busy all day? Mostly, your fetus is in rehearsals — practice, practice, practicing and getting ready for that big debut Babies work on breathing, sucking and swallowing motions so that when they leave your comfy womb and move into your comfy house, they'll have the skills necessary to survive.\n Your fetus is also holding daily aerobics classes — kicking, curling toes and moving those little arms and legs — but because he only weighs a couple of ounces, you won't feel the fetal movements going on inside your abdominal gym.\n"
+      },
+      {
+        "label": "Baby at 16 Week",
+        "description": "Thanks to those developing facial muscles, your baby is capable of making a few expressive frowns and squints, even at this early stage.\n Baby's beautiful eyes are finally working too, making small side-to-side movements and perceiving light, although the eyelids are still sealed. Peekaboo!\n Your fetus is becoming a looker too — with a face that's starting to look more human — but a skinny looker, since there's no baby fat yet.\n And here's the skinny on baby skin: It's practically translucent now, so if you took a peek inside your uterus, you'd be able to see your baby's blood vessels under that thin skin.\n Listen up: Tiny bones in your fetus' ears are in place, making it likely that baby will soon be able to hear your voice (or something like it) when you're speaking. Generally, babies fully develop the ability to hear in the womb by 18 weeks of pregnancy.\n"
+      },
+      {
+        "label": "Baby at 17 Week",
+        "description": "Since practice makes perfect, your baby is sharpening his sucking and swallowing skills in preparation for that first and second…and third suckle at your breast or the bottle.\nIn fact, most of the survival reflexes your baby will have at birth are being perfected in utero right now.\n Here's some proof that your baby is truly one of a kind — as if you needed any! Within the next week or so, the pads on your baby's fingertips and toes will become adorned with completely individual swirls and creases, aka fingerprints.\n Baby's heart is now regulated by the brain, so no more random beats, and is churning out 140 to 150 beats per minute — about twice as fast as yours.\n"
+      },
+      {
+        "label": "Baby at 18 Week",
+        "description": "Something you won't see on the ultrasound — but you'll learn is in working order — is your baby's nervous system, which is maturing rapidly when you're 18 weeks pregnant.\n A network of nerves, now covered with a substance called myelin that helps speed messages from nerve cell to nerve cell, are forming more complex connections.\nAnd those in the brain are further developing into the ones that serve the senses of touch, taste, smell, sight and hearing.\n Speaking of hearing, your baby's is growing more acute and baby can finally fully hear you this week, making your little one more conscious of sounds that come from inside your body. Meaning you could both be listening to each other hiccup!\n"
+      },
+      {
+        "label": "Baby at 19 Week",
+        "description": "Your little one may have a cheesy varnish this week.\nSay what? You read that right — a protective substance called vernix caseosa (vernix is the Latin word for varnish; caseosa means cheese) now covers your fetus' skin. It's greasy, white and made up of that downy hair known as lanugo, oil from your baby's glands and dead skin cells.\n  This waxy cheese may not sound too appealing, but it's there for good reason: Vernix protects your baby's sensitive skin from the surrounding amniotic fluid. Without it, he'd look very wrinkled at birth — sort of what you'd look like if you soaked in a bath for nine months.\nThe vernix sheds as delivery approaches, though some babies — especially those born early — will still be covered with it at birth, so you might get a look at your baby's first anti-wrinkle cream"
+      },
+      {
+        "label": "Baby at 20 Week",
+        "description": "Curious about whether that melon-sized belly has a boy or a girl inside? Now's your chance to take a peek!\nThough the external genitals in both male and female fetuses still have a way to grow, you'll be able to find out your baby's sex via the second trimester ultrasound, also known as the anatomy scan, usually scheduled for anytime between 18 and 22 weeks.\nYou'll also get a detailed sneak peek at baby's other major organs and measurements and make sure your little one is developing normally.\nThis exam, which is much longer than the routine ultrasounds you get at your doctor's office, gives your practitioner a chance to see how things are going in there — and wow, are they going!\n If you're carrying a girl, your baby's uterus is fully formed this week and the vaginal canal is starting its development; in a few decades, you might be a grandma! Your little girl also has primitive eggs in tiny ovaries now, about 7 million of them. By birth, that number will be down to 1 or 2 million.\n"
+      },
+      {
+        "label": "Baby at 21 Week",
+        "description": "Speaking of milestones, whatever you eat this week, there's a good chance your baby will taste it, too. That's because when you're 21 weeks pregnant, your baby swallows a bit of amniotic fluid each day — not only for nutrition and hydration, but also to practice swallowing and digesting, skills he'll need as soon as he arrives in your arms.\nAnd keep this in mind: The taste of the amniotic fluid differs from day to day depending on what you've eaten — spicy enchilada one day, sweet banana the next. That smorgasbord of flavors won't be lost on your baby since your little one has very developed taste buds already.\nIn fact, researchers have noted that babies who were exposed to certain tastes in utero via the amniotic fluid were more eager to eat foods with those same tastes after birth. Want your peanut to eat his broccoli later? Eat yours now!"
+      },
+      {
+        "label": "Baby at 22 Week",
+        "description": "This week, your sweetie is making more sense of the world as she develops her sense of touch.\nIn fact, your little one's grip is quite strong now, and since there's nothing else to grab in utero, she may sometimes hold on tight to that umbilical cord. Don't worry — it's tough enough to handle it.\nThe sense of sight is also becoming more fine-tuned. Your fetus can now perceive light and dark much better than before, even with those fused eyelids.\nBut remember — unless you're shining a flashlight over your belly, which you can do, by the way — it'll be mostly dark for your baby inside that cozy womb of yours.\nShe can also hear your voice, your heartbeat, your gurgling stomach and the whoosh-whoosh of blood circulating through your body."
+      },
+      {
+        "label": "Baby at 23 Week",
+        "description": "Baby's skin is a bit saggy since it grows a lot faster than fat, but soon he’ll start to fit his frame as fat deposits fill things out.\nBy the time your baby is born, he will be pleasantly plump and filled out, from chubby cheeks to chubby toes.\nAnd although at 23 weeks pregnant your baby's organs and bones are visible through his skin, he'll become less transparent once those fat deposits settle in.\n You’ve probably heard your developing baby's heartbeat through a Doppler a number of times already, though you never get tired of hearing it, but by now you or your doctor might also be able to hear it through a standard stethoscope (though sometimes, it can be tricky to find). What a heartthrob!"
+      },
+      {
+        "label": "Baby at 24 Week",
+        "description": "Wondering what (and who) your baby will look like? If you had a baby cam at 24 weeks pregnant, you'd almost be able to tell by now. That beautiful face, though still tiny, is almost fully formed, complete with eyelashes, eyebrows and hair.\n Will your baby have brown, black, blond or red hair — or something in between? Actually, right now her locks are white, since there's no pigment yet. The fat that will be piled on under baby's skin is also missing from the picture right now.\n Until those fat deposits are made, that very tender skin is still very transparent, which means a close look would let you see clear through to all the organs, bones and blood vessels. Fortunately, that see-through look won't last much longer."
+      },
+      {
+        "label": "Baby at 25 Week",
+        "description": "What else is going on this week? No matter what your baby's skin color will eventually be, it's turning pinker now — and not because he's getting overheated.\nIn fact, the amniotic fluid is perfectly climate-controlled, keeping him at an always-comfortable temperature. Instead, the skin is changing color because small blood vessels, called capillaries, are forming under the skin and filling with blood.\nLater this week, blood vessels will also develop in your baby's lungs, bringing them one step closer to full maturity — and one step closer to taking that first breath of fresh air. But at 25 weeks pregnant, those lungs are still very much works-in-progress.\nThough they are already beginning to produce surfactant, a substance that will help them expand with oxygen after baby is born, the lungs are still too undeveloped to sufficiently send oxygen to the bloodstream and release carbon dioxide when she exhales."
+      },
+      {
+        "label": "Baby at 26 Week",
+        "description": "Look who's looking! It's your baby! Those little eyes — which have been closed for the past few months so that the retina, the part of the eye that allows images to come into focus, could develop — are beginning to open at 26 weeks pregnant.\n That means your baby is able to see what's going on now, though unfortunately the view in your uterus isn't all that exciting.\n But do try this at home for kicks: Shine a flashlight at your stomach. Your little peanut might kick in response — as in: Get that light out of my eyes!\n Right now, the iris, which is the colored part of the eye, still doesn't have much pigmentation — that'll fill in over the next month or two — so it's too early to start guessing your little one's eye color.\nAnd even the color your baby is born with might not be the permanent shade. You may be kept guessing until she's a year old, with the most dramatic changes occurring by about 6 months."
+      },
+      {
+        "label": "Baby at 27 Week",
+        "description": "Big news: Your baby may recognize both your and your partner's voices by now.\n His auditory development, or hearing, is progressing as the network of nerves to the ears matures — though the sounds he hears are muffled thanks to the creamy coating of vernix covering them.\nSo this might be a good time to read and even sing to your baby — or rather, your tummy — and a good chance to start memorizing those nursery rhymes and lullabies you'll need to be repeating (and repeating) pretty soon.\n While you're at it, here's another way to have some family fun at 27 weeks pregnant: Your partner might be able to hear baby's heartbeat by pressing an ear to your stomach.\n"
+      },
+      {
+        "label": "Baby at 28 Week",
+        "description": "Your baby is settling into the proper position for birth, which will be head-down toward your body's nearest exit!\n Baby is busy these days blinking — outside in the real world, blinking is necessary to help keep foreign objects out of the eyes. That skill is just one of an already impressive repertoire of tricks she's working on, like coughing, more intense sucking, hiccupping and, perhaps most important, better breathing.\n Dreaming about your baby at 28 weeks pregnant? Your baby may be dreaming about you too. Brain wave activity measured in a developing fetus shows different sleep cycles, including the rapid eye movement phase — the stage when dreaming occurs."
+      },
+      {
+        "label": "Baby at 29 Week",
+        "description": "As more fat is deposited under the skin surface, his wrinkled skin is smoothing out. This white fat, as it's called, is different from the earlier brown fat your developing fetus accumulated. Brown fat is necessary for body temperature regulation, while white fat — the same kind you have — actually serves as an energy source.\n Since space in your baby's living quarters is now at a premium, you'll be feeling jabs and pokes from elbows and knees, mostly.\n And they'll be more vigorous and less erratic than before because your baby is stronger and excitedly responding to all sorts of stimuli — movement, sounds, light and that candy bar you ate half an hour ago.\nThat means now's a good time to start doing a kick count once or twice a day, depending on what your doctor recommends. Plus, it's a good excuse for a rest."
+      },
+      {
+        "label": "Baby at 30 Week",
+        "description": "Also growing at a quick pace these days? Baby's brain. Until now, its surface was smooth — but now, your fetus' brain is taking on those characteristic grooves and indentations.\n The reason for the different appearance: Those wrinkles allow for an increased amount of brain tissue — a necessary change as your baby prepares to develop street smarts for life outside your womb.\n Now that baby’s brain and new fat cells are regulating body temperature, the lanugo — that soft, downy hair covering your little bean's body — is beginning to disappear.\n No need for that furry coat anymore! But you may see a few leftover strands of fur on your newborn's back and shoulders when she’s born."
+      },
+      {
+        "label": "Baby at 31 Week",
+        "description": "Your baby's brain is working overtime these days, developing faster than ever. Connections between individual nerve cells — he's got to make billions of them! — are being made at a super fast rate. He's now processing information, tracking light and perceiving signals from all five senses.\n Sure, your baby may not be able to smell too much right now, though he likely can smell and taste different foods you eat through the amniotic fluid as well as catch a whiff of some beauty products you use (which also wind up in the amniotic fluid).\n Lucky for you and your baby, yours will be one of the very first scents he breathes in, a scent that will quickly become his very favorite."
+      },
+      {
+        "label": "Baby at 32 Week",
+        "description": "In these past few weeks, it's all about practice, practice, practice as she hones the skills she'll need to thrive outside the womb — from swallowing and breathing to kicking and sucking. In anticipation of that momentous transition to mouth feeding, your baby's digestive system is all set and ready to go.\nAnd though you're weeks away from your due date, your baby's looking more and more like a newborn: As fat accumulates under her skin, it's no longer transparent and is now opaque."
+      },
+      {
+        "label": "Baby at 33 Week",
+        "description": "If your uterus had eyes, here's what you'd see: your fetus acting more and more like a baby, with his eyes closing during sleep and opening while awake.\nAnd because those uterine walls are becoming thinner, more light penetrates the womb, helping your baby differentiate between day and night. Now if only baby can remember that difference on the outside! Good news! Your baby has reached an important milestone about now: He's got his own immune system. Antibodies are being passed from you to your little one as he continues to develop his fetal immune system, which will come in handy once he's outside the womb and fending off all sorts of germs."
+      },
+      {
+        "label": "Baby at 34 Week",
+        "description": "This week your baby is clocking in at 5¼ pounds and could be as long as 18 inches. Need a visual? Hold a 5-pound bag of flour in your arms and imagine it's your soon-to-be-born baby — cradle it and you'll only get strange looks in the baking aisle.\n Then stack three such bags one on top of the other and get ready for some more strange looks, maybe from the same clerks who saw you grinning and holding that 1-pound bag of sugar a few weeks ago. That's how long your baby is at 34 weeks pregnant. If your baby is a boy, then this week the testicles are making their way down from the abdomen to the scrotum. Some full-term baby boys — roughly 3 to 4 percent — are born with undescended testicles, but they usually make the trip down sometime before the first birthday. About 30 percent of preterm boys are born with undescended testicles, too."
+      },
+      {
+        "label": "Baby at 35 Week",
+        "description": "Something else that's developing at a mind-boggling pace these day: your baby's brainpower. Luckily, the part that surrounds that amazing brain — the skull — remains soft. And for good reason: A soft skull will allow your baby to squeeze more easily through the birth canal.\n Your baby's once skinny arms and legs are now quite plump…and irresistibly, squeezably soft."
+      },
+      {
+        "label": "Baby at 36 Week",
+        "description": "When you're 36 weeks pregnant, your baby's skull bones are not fused together yet so the head can easily (well, relatively easily) maneuver through the birth canal.\n Your baby's skull isn't the only soft structure in her little body. Most of her bones and cartilage are quite soft as well, allowing for an easier journey into the world during delivery. But don't worry — they'll harden over the first few years of her life.\n By now, many of your baby's systems are pretty mature, at least in baby terms, and just about ready for life on the outside. Blood circulation, for instance, has been perfected and your baby's immune system has developed enough to protect your little one from infections outside the womb."
+      },
+      {
+        "label": "Baby at 37 Week",
+        "description": "Here's an interesting fact: At birth, your baby's head — which, by the way, is still growing — will be roughly the same circumference as his chest.\n And guess what's making a quite-literal impression these days on those shoulders and hips? Fat — causing little dimples in those cute elbows, knees and shoulders, along with creases and folds in the neck and wrists."
+      },
+      {
+        "label": "Baby at 38 Week",
+        "description": "At 38 weeks pregnant, all systems are almost go! As you prepare for baby's ETA, she's getting ready too, big-time, and continues to shed vernix and lanugo.\nYour baby is also swallowing amniotic fluid, some of which winds up in her intestines, where it — along with other shed cells, bile and waste products — will turn into your baby's first bowel movement (meconium) and perhaps your first diaper change.\nHer lungs are still maturing and producing more and more surfactant, a substance that prevents the air sacs in the lungs from sticking to each other once she starts to breathe.\n Most other changes this week are small but important: She's continuing to add fat and fine-tune her brain and nervous system — that way, she can deal with all the stimulation that awaits her once she makes her entrance into the world."
+      },
+      {
+        "label": "Baby at 39 Week",
+        "description": "Your baby's skin has now finally changed from pink-tinted to white, no matter what its eventual color will be. (Pigmentation will occur soon following birth.) That's because a thicker fat layer has been deposited over the blood vessels, making your baby's cheeks pinchably and kissably round."
+      },
+      {
+        "label": "Baby at 40 Week",
+        "description": "At 40 weeks pregnant, you’re at the official end of your pregnancy. You, or actually the placenta, are still providing the antibodies she'll need to fight off infections for the first six months of her life.\n But if you plan on breastfeeding, your milk will provide more antibodies to boost the immune system — especially colostrum, a thin, yellowish precursor to breast milk that's super rich in antibodies and feeds your baby for the first few days postpartum."
       }
-    ]
+
+]

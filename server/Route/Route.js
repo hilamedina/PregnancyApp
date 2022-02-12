@@ -3,8 +3,11 @@ const router = express.Router();
 const size = require('../model/sizeModel');
 const weekly = require('../model/weeklyModel');
 const todo = require('../model/todoModel');
+const event = require('../model/eventModel');
 
 const {
+  registerUser,
+  getMyEvent,
   getMyWeightForUsers,
   getAllSize,
   getAllWeekly,
@@ -13,6 +16,7 @@ const {
   getTodoListForUsers,
   removeTodoItem,
   addNewWeight,
+  addNewEvent,
 } = require('../utils/utils');
 
 router.get('/size', async (req, res) => {
@@ -69,7 +73,21 @@ router.post('/addWeight', async (req, res) => {
   try {
     res.status(200).send(await addNewWeight(req.body));
   } catch (e) {
-    console.log('check');
+    res.status(400).send({ error: e.message });
+  }
+});
+router.post('/create-event', async (req, res) => {
+  try {
+    res.status(200).send(await addNewEvent(req.body));
+  } catch (e) {
+    // console.log('check');
+    res.status(400).send({ error: e.message });
+  }
+});
+router.get('/find-event', async (req, res) => {
+  try {
+    res.status(200).send(await getMyEvent(req.body));
+  } catch (e) {
     res.status(400).send({ error: e.message });
   }
 });

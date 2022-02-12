@@ -4,51 +4,27 @@ import { useState } from 'react';
 // import { getSizeData } from '../../Api/Api';
 import { getWeeklyData } from '../../Api/Api';
 import SwipeableTextMobileStepper from './carousel';
+import '../slider/slider.css';
 
 const getStyleElement = (step) => {
   return (
     <>
       <div
         style={{
-          display: 'flex',
-          justifyContent: 'space-around',
-          alignItems: 'center',
+          wordSpacing: '4px',
+          boxSizing: 'border-box',
           // border: 'yellow 3px solid',
         }}
       >
-        <img
-          style={{
-            width: '150px',
-            height: '120px',
-          }}
-          src={step.photo}
-          alt={step.label}
-        ></img>
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            width: '150px',
-            height: '100px',
-            color: 'white',
-            marginRight: '10px',
-          }}
-        >
-          {step.cm}
-        </div>
-      </div>
-      <div
-        style={{
-          wordSpacing: '4px',
-          boxSizing: 'border-box',
-        }}
-      >
+        {/* <div>{step.label}</div> */}
+        <br />
+        <br />
         <p
           style={{
-            color: '#5E4C5A',
+            color: 'black',
             whiteSpace: 'pre-wrap',
             padding: '0 6% 0 6% ',
+            // border: '2px solid red',
           }}
         >
           {step.description}

@@ -20,13 +20,7 @@ const AppmyWeight = (props) => {
     <>
       <div className="weight-list">
         {myWeightData.map((userWeight, index) => (
-          <MyWeightItem
-            key={index}
-            index={index}
-            userWeight={userWeight}
-            // completeTodo={myWeight}
-            // removeTodo={deleteTodoItem}
-          />
+          <MyWeightItem key={index} index={index} userWeight={userWeight} />
         ))}
       </div>
       <div>
