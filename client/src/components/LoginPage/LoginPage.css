@@ -4,7 +4,7 @@
 
 }
 .LoginImage{
-    background: url("../Images/feet2.jpg") no-repeat center center/cover;
+    /* background: url("../Images/feet2.jpg") no-repeat center center/cover; */
   /* height: 100%; */
   width:100%;
 }
@@ -16,10 +16,13 @@
   padding:20px;
   height: 60vh;
   width: 50vh;
-  margin-top:20px;
-  opacity: calc(0.35);
-  border:none;
-  border-radius:30%;
+  margin-top:100px;
+  border:3px solid rgb(222,189,161,0.9);
+  /* background-color: rgba(255, 255, 255, 0.3); */
+  opacity: calc(0.4);
+
+  border-radius:20px;
+  
 }
 .AvatarStyle{
   background-color:red; 

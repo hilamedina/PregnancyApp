@@ -9,6 +9,7 @@ import {
   weeklyView,
   todoView,
   myWeightView,
+  loginView,
 } from '../../App';
 import MainBtn from './mainBtn';
 import { ClassNames } from '@emotion/react';
@@ -24,9 +25,9 @@ const mainBtnScreen = (props) => {
         />
         <MainBtn
           onClick={() => {
-            props.changeView(sizeView);
+            props.changeView(loginView);
           }}
-          name={'Baby Size'}
+          name={'login'}
         />
       </div>
       <div>
@@ -52,9 +53,9 @@ const mainBtnScreen = (props) => {
         />
         <MainBtn
           onClick={() => {
-            // props.changeView(sizeView);
+            props.changeView(sizeView);
           }}
-          name={'Photo'}
+          name={'Baby Size'}
         />
       </div>
     </div>

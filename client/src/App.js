@@ -51,7 +51,7 @@ function App() {
       case myWeightView:
         return <MyWeight returnToMainView={returnToMainView} />;
       case loginView:
-        return <LogingPage />;
+        return <LogingPage returnToMainView={returnToMainView} />;
 
       default:
         return <div>{'Error'}</div>;
@@ -68,7 +68,7 @@ function App() {
       ></header> */}
       <div className="App">{getCurrentView()}</div>
       {/* <AppToDo /> */}
-      {/* <LogingPage /> */}
+      <LogingPage />
     </>
   );
 }

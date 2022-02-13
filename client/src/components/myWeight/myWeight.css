@@ -22,7 +22,7 @@
      .weight {
       display: flex;
       flex-direction: column;
-      border:3px solid rgb(222,189,161,0.8);;
+      border:3px solid rgb(222,189,161,0.8);
       /* width:300px; */
       border-radius:8px;
       /* padding:3px; */
