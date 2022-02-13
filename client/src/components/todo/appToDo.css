@@ -45,5 +45,50 @@
     border:3px solid rgb(222,189,161,0.8);
 
   }
+.bt{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   padding:3%;
+   gap: 15px;
+}
+
+.bt {
+  margin-right: 100px;
+   background-color:transparent;
+   text-justify: center;
+   width: 120px;
+   height: 70px;
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   border:0.5px solid rgb(94, 91, 91); 
+   font-size:18px;          
+   border-radius: 10px;
+   cursor: pointer;
+   color:rgb(94, 91, 91)
+  
+ }
+  .bt:hover {
+   background-position: right center; /* change the direction of the change here */
+   color:black;
+   text-decoration: none;
+   cursor: pointer;
+ }
+ 
+
+
+   
+         
+
+
+
+      
+
+         
 
  

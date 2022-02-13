@@ -27,7 +27,16 @@ const AppmyWeight = (props) => {
         <MyWeightForm myWeight={myWeight} />
       </div>
       <div>
-        <button onClick={props.returnToMainView}>Back</button>
+        <button
+          style={{
+            backgroundColor: 'transparent',
+            border: 'none',
+            marginTop: '10px',
+          }}
+          onClick={props.returnToMainView}
+        >
+          Back
+        </button>
       </div>
     </>
   );

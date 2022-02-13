@@ -81,27 +81,7 @@ function SwipeableTextMobileStepper(props) {
             opacity: 1,
           }}
         >
-          <Paper
-          //   square
-          //   elevation={0}
-          // sx={{
-          //     display: 'flex',
-          //     alignItems: 'center',
-          //     height: 50,
-          //     width: 375,
-
-          //     pl: 2,
-          //     marginRight: '20px',
-          //     border: 'none',
-          // border:"2px red solid "
-          // backgroundColor: 'rgba(206,205,201,0.3)',
-          // marginTop: '50px',
-          // }}
-          >
-            {/* <Typography> 
-            <Typography style={{ color: '#5E4C5A', margin: 'auto' }}>
-             </Typography> */}
-          </Paper>
+          <Paper></Paper>
           {props.data[activeStep].label}
           <div style={{ marginBottom: '30px' }}></div>
           <SwipeableViews
@@ -158,7 +138,11 @@ function SwipeableTextMobileStepper(props) {
       </Box>
       {/* האון קליל מקבל את השם שנשלח אליו מסייז קרוסל */}
       <button
-        style={{ witdth: '20px', height: '20px', display: 'flex' }}
+        style={{
+          backgroundColor: 'transparent',
+          border: 'none',
+          marginBottom: '40rem',
+        }}
         onClick={props.returnToMainView}
       >
         Back

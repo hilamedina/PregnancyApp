@@ -48,7 +48,12 @@ const AppToDo = (props) => {
           <TodoForm addTodo={addTodo} />
         </div>
       </div>
-      <button onClick={props.returnToMainView}>Back</button>
+      <button
+        style={{ backgroundColor: 'transparent', border: 'none' }}
+        onClick={props.returnToMainView}
+      >
+        Back
+      </button>
     </>
   );
 };

@@ -1,7 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-// import { getSizeData } from '../../Api/Api';
 import { getWeeklyData } from '../../Api/Api';
 import SwipeableTextMobileStepper from './carousel';
 import '../slider/slider.css';
@@ -22,7 +21,6 @@ const getStyleElement = (step) => {
             color: 'black',
             whiteSpace: 'pre-wrap',
             padding: '0 6% 0 6% ',
-            // border: '2px solid red',
           }}
         >
           {step.description}
@@ -49,24 +47,4 @@ const WeeklyCarousel = (props) => {
   );
 };
 
-// const getStyleElement1 = (step) => {
-//   return (
-//     <div
-//       style={{
-//         wordSpacing: '4px',
-//         boxSizing: 'border-box',
-//       }}
-//     >
-//       <p
-//         style={{
-//           color: '#5E4C5A',
-//           whiteSpace: 'pre-wrap',
-//           padding: '0 6% 0 6% ',
-//         }}
-//       >
-//         {step.description}
-//       </p>
-//     </div>
-//   );
-// };
 export default WeeklyCarousel;

@@ -13,9 +13,6 @@ import {
 import MainBtn from './mainBtn';
 import { ClassNames } from '@emotion/react';
 import '../butoonComponent/btn.css';
-// import SendIcon from '@mui/icons-material/Send';
-// import Stack from '@mui/material/Stack';
-// import { fontSize, fontWeight } from '@mui/system';
 
 const mainBtnScreen = (props) => {
   return (
@@ -23,15 +20,13 @@ const mainBtnScreen = (props) => {
       <div>
         <MainBtn
           onClick={() => props.changeView(calendarView)}
-          startIcon={<CalendarViewMonthIcon />}
           name={'Appointment'}
         />
         <MainBtn
           onClick={() => {
             props.changeView(sizeView);
           }}
-          startIcon={<FormatListBulletedSharpIcon />}
-          name={'size'}
+          name={'Baby Size'}
         />
       </div>
       <div>
@@ -39,15 +34,13 @@ const mainBtnScreen = (props) => {
           onClick={() => {
             props.changeView(todoView);
           }}
-          startIcon={<FormatListBulletedSharpIcon />}
           name={'To Do'}
         />
         <MainBtn
           onClick={() => {
             props.changeView(weeklyView);
           }}
-          startIcon={<FormatListBulletedSharpIcon />}
-          name={'weekly'}
+          name={'Weekly'}
         />
       </div>
       <div>
@@ -55,15 +48,13 @@ const mainBtnScreen = (props) => {
           onClick={() => {
             props.changeView(myWeightView);
           }}
-          startIcon={<MonitorWeightOutlinedIcon />}
           name={'My Weigth'}
         />
         <MainBtn
           onClick={() => {
             // props.changeView(sizeView);
           }}
-          startIcon={<MonitorWeightOutlinedIcon />}
-          name={'My Weigth **'}
+          name={'Photo'}
         />
       </div>
     </div>

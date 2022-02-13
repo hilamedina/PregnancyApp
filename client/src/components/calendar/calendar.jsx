@@ -57,8 +57,22 @@ const Calender = (props) => {
           margin: 'auto',
         }}
       >
-        <button onClick={props.returnToMainView}>Back</button>
-        <button onClick={() => setModalOpen(true)}>Add Event</button>
+        <button
+          style={{
+            backgroundColor: 'transparent',
+            border: 'none',
+            marginRight: '15px',
+          }}
+          onClick={props.returnToMainView}
+        >
+          Back
+        </button>
+        <button
+          style={{ backgroundColor: 'transparent', border: 'none' }}
+          onClick={() => setModalOpen(true)}
+        >
+          Add Event
+        </button>
         <FullCalendar
           ref={calendarRef}
           events={events}
