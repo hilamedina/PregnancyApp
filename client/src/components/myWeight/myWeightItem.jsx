@@ -9,7 +9,7 @@ function MyWeightItem({ userWeight, index }) {
           <div>{userWeight.weight} Kg</div>
           <div>{userWeight.date}</div>
         </div>
-        <div>↧</div>
+        <div style={{ fontSize: '30px' }}>↧</div>
       </div>
     </div>
   );

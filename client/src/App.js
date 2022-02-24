@@ -43,8 +43,6 @@ function App() {
       case weeklyView:
         return <WeeklyCarousel returnToMainView={returnToMainView} />;
       case sizeView:
-        //   צד שמאל זה השם של הפרופס בסייד קרוסל - מי שזה נשלח אליו
-        // בצד ימין שם הערך שלו בקובץ הנוכחי
         return <SizeCarousel returnToMainView={returnToMainView} />;
       case calendarView:
         return <Calendar returnToMainView={returnToMainView} />;
@@ -59,18 +57,13 @@ function App() {
   };
   return (
     <>
-      {/* <header
-        style={{
-          // marginBottom: '1rem',
-          backgroundColor: '#DABBB3',
-          height: '2.3rem',
-        }}
-      ></header> */}
+      {/* <header></header> */}
       <div className="App">{getCurrentView()}</div>
-      {/* <AppToDo /> */}
-      <LogingPage />
     </>
   );
 }
 
 export default App;
+
+//   צד שמאל זה השם של הפרופס בסייד קרוסל - מי שזה נשלח אליו
+// בצד ימין שם הערך שלו בקובץ הנוכחי

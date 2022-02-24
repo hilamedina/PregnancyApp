@@ -49,6 +49,7 @@ router.post('/todo/add', async (req, res) => {
     res.status(400).send({ error: e.message });
   }
 });
+
 router.post('/todo/set', async (req, res) => {
   try {
     res.status(200).send(await setTodoStatus(req.body));
@@ -56,6 +57,7 @@ router.post('/todo/set', async (req, res) => {
     res.status(400).send({ error: e.message });
   }
 });
+
 router.post('/todo/delete', async (req, res) => {
   try {
     res.status(200).send(await removeTodoItem(req.body));
