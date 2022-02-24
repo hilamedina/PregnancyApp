@@ -16,14 +16,14 @@ export const getSizeData = (onSuccess) => {
 };
 export const getTodoData = (onSuccess) => {
   const body = { userId: '1' };
-  axios.post('http://localhost:5000/todo', body).then((response) => {
+  axios.post(myURL + 'todo', body).then((response) => {
     onSuccess(response.data);
     console.log(response.data);
   });
 };
 export const addTodoData = (onSuccess, msg) => {
   const body = { userId: '1', task: msg };
-  axios.post('http://localhost:5000/todo/add', body).then((response) => {
+  axios.post(myURL + 'todo/add', body).then((response) => {
     onSuccess(response.data);
     console.log(response.data);
   });
@@ -31,27 +31,27 @@ export const addTodoData = (onSuccess, msg) => {
 
 export const setStatusTodo = (onSuccess, task, isCompleted) => {
   const body = { userId: '1', task: task, isCompleted: isCompleted };
-  axios.post('http://localhost:5000/todo/set', body).then((response) => {
+  axios.post(myURL + 'todo/set', body).then((response) => {
     onSuccess(response.data);
     console.log(response.data);
   });
 };
 export const removeItem = (onSuccess, task) => {
   const body = { task: task };
-  axios.post('http://localhost:5000/todo/delete', body).then((response) => {
+  axios.post(myURL + 'todo/delete', body).then((response) => {
     // console.log(response);
     onSuccess(response.data);
   });
 };
 
 export const getWeeklyData = (onSuccess) => {
-  axios.get('http://localhost:5000/weekly').then((response) => {
+  axios.get(myURL + 'weekly').then((response) => {
     onSuccess(response.data);
     console.log(response.data);
   });
 };
 export const getMyWeightData = (onSuccess) => {
-  axios.get('http://localhost:5000/myWeight').then((response) => {
+  axios.get(myURL + 'myWeight').then((response) => {
     onSuccess(response.data);
     console.log(response.data);
   });
@@ -61,7 +61,7 @@ export const addMyWeight = (onSuccess, weight, week) => {
   const body = { userId: '1', weight: weight, week: week };
 
   axios
-    .post('http://localhost:5000/addWeight', body)
+    .post(myURL + 'addWeight', body)
     .then((response) => {
       console.log(response);
       onSuccess(response.data);
@@ -74,7 +74,7 @@ export const createUser = (onSuccess, email, password) => {
   const body = { userId: '1', email: email, password: password };
 
   axios
-    .post('http://localhost:5000/api/users', body)
+    .post(myURL + 'api/users', body)
     .then((response) => {
       console.log(response);
       onSuccess(response.data);
