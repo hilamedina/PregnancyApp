@@ -3,15 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-
   "scripts": {
-    "dev": "react-scripts start",
-    "start": "serve -s build",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
-    },
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js",
+    "start-server-dev": "nodemon ./server/app.js",
+    "start-react-dev": "npm run start --prefix client",
+    "build-react": "npm run build --prefix client",
+    "copy": "cp -r client/build server/",
+    "heroku-postbuild": "npm install --prefix client && npm run build --prefix client && npm run copy"
+  },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hilamedina/PregnancyApp.git"
