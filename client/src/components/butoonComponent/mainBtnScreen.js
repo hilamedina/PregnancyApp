@@ -49,7 +49,7 @@ const mainBtnScreen = (props) => {
           onClick={() => {
             props.changeView(myWeightView);
           }}
-          name={'My Weigth'}
+          name={'My Weight'}
         />
         <MainBtn
           onClick={() => {
