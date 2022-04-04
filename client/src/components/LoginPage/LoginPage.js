@@ -57,20 +57,19 @@ export default function LoginPage(props) {
                   <br />
                   <br />
                   <br />
-                  {/* <button */}
-                  {/* onClick={props.returnToMainView} */}
+
                   <Link
                     href="login"
                     onClick={props.returnToMainView}
                     className="btnStyle"
                     type="submit"
-                    variant="contained" //
+                    variant="contained"
                     fullWidth
                   >
                     {' '}
                     Sign in
                   </Link>
-                  {/* </button> */}
+
                   <div className="Links-Login">
                     <Typography>
                       <Link href="">Forgot Password ?</Link>

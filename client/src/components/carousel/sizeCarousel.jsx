@@ -82,3 +82,5 @@ const SizeCarousel = (props) => {
 //       getDataStyleElement={getStyleElement1}
 
 export default SizeCarousel;
+
+// project.id.title

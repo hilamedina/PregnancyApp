@@ -50,7 +50,6 @@ function App() {
         return <MyWeight returnToMainView={returnToMainView} />;
       case loginView:
         return <LogingPage returnToMainView={returnToMainView} />;
-
       default:
         return <div>{'Error'}</div>;
     }
