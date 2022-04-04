@@ -1,5 +1,4 @@
 import React from 'react';
-// import DeleteIcon from '@mui/icons-material/Delete';
 import CalendarViewMonthIcon from '@mui/icons-material/CalendarViewMonth';
 import MonitorWeightOutlinedIcon from '@mui/icons-material/MonitorWeightOutlined';
 import FormatListBulletedSharpIcon from '@mui/icons-material/FormatListBulletedSharp';

@@ -108,8 +108,6 @@ function SwipeableTextMobileStepper(props) {
               style={{ color: 'white', fontWeight: 'bold' }}
               size="large"
               onClick={handleNext}
-
-              // disabled={activeStep === maxSteps - 1}
             >
               Next
               {theme.direction === 'rtl' ? (
@@ -136,7 +134,6 @@ function SwipeableTextMobileStepper(props) {
           }
         />
       </Box>
-      {/* האון קליל מקבל את השם שנשלח אליו מסייז קרוסל */}
       <button
         style={{
           backgroundColor: 'transparent',

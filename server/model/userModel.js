@@ -35,20 +35,17 @@ const userSchema = new mongoose.Schema({
   },
   week: {
     type: Number,
-    // required: true,
     default: 1,
   },
   tokens: [
     {
       token: {
         type: String,
-        // require: true,
       },
     },
   ],
 });
 
-//prevent sending unnecessary data to the user
 userSchema.methods.toJSON = function () {
   const user = this;
   const userObject = user.toObject();
@@ -56,7 +53,6 @@ userSchema.methods.toJSON = function () {
   return userObject;
 };
 
-//check credentials before login
 userSchema.statics.findByCredentials = async (email, password) => {
   const user = await User.findOne({ email });
   if (!user) {
@@ -68,7 +64,7 @@ userSchema.statics.findByCredentials = async (email, password) => {
   }
   return user;
 };
-//generate token after login
+
 userSchema.methods.generateAuthToken = async function () {
   const user = this;
   const token = jwt.sign({ _id: user._id.toString() }, process.env.SECRET_KEY);
@@ -77,7 +73,6 @@ userSchema.methods.generateAuthToken = async function () {
   return token;
 };
 
-// Hash the plain text password before saving
 userSchema.pre('save', async function (next) {
   const user = this;
   if (user.isModified('password')) {
@@ -87,6 +82,3 @@ userSchema.pre('save', async function (next) {
 });
 
 module.exports = mongoose.model('User', userSchema);
-// const User = mongoose.model('User', userSchema);
-
-// module.exports = User;

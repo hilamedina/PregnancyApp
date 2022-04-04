@@ -2,8 +2,6 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { getSizeData } from '../../Api/Api';
-// import { getWeeklyData } from '../../Api/Api';
-
 import SwipeableTextMobileStepper from './carousel';
 
 const getStyleElement = (step) => {
@@ -49,7 +47,6 @@ const getStyleElement = (step) => {
             color: 'black',
             whiteSpace: 'pre-wrap',
             padding: '0 6% 0 6% ',
-            // fontWeight: 'bold',
           }}
         >
           {step.description}
@@ -66,21 +63,17 @@ const SizeCarousel = (props) => {
   }, []);
   return (
     <SwipeableTextMobileStepper
-      // data={images}
       data={sizeData}
-      // צד שמאל זה השם של הפרופס בסוויפבל - מי שזה נשלח אליו
-      //צד ימין זה איך שזה נקרא מהקובץ הזה - שקיבהלתי מהאפ כי הפונקציה במקרה הזה כתובה שם
       returnToMainView={props.returnToMainView}
       getDataStyleElement={getStyleElement}
     />
   );
 };
 
+export default SizeCarousel;
+
 //       // צד שמאל זה השם של הפרופס בסוויפבל - מי שזה נשלח אליו
 //       //צד ימין זה איך שזה נקרא מהקובץ הזה - שקיבהלתי מהאפ כי הפונקציה במקרה הזה כתובה שם
 //       returnToMainView={props.returnToMainView}
 //       getDataStyleElement={getStyleElement1}
-
-export default SizeCarousel;
-
 // project.id.title

@@ -7,11 +7,7 @@ import {
   Button,
   Typography,
   Link,
-  // FormControlLabel,
-  // Checkbox,
 } from '@material-ui/core';
-// import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
-// import LockOpenIcon from '@mui/icons-material/LockOpen';
 
 export default function LoginPage(props) {
   return (
@@ -23,16 +19,12 @@ export default function LoginPage(props) {
               <Paper className="PaperStyle" elavation={10}>
                 <form>
                   <Grid align="center">
-                    <Avatar className="AvatarStyle">
-                      {/* <LockOpenIcon /> */}
-                      {/* <AssignmentIndIcon /> */}
-                    </Avatar>
+                    <Avatar className="AvatarStyle"></Avatar>
                     <h2>Sign up</h2>
                   </Grid>
                   <TextField
                     label="Username"
                     placeholder="Enter your Username"
-                    // fullwidth
                     required
                   ></TextField>
                   <br />
@@ -41,7 +33,6 @@ export default function LoginPage(props) {
                   <TextField
                     label="email"
                     placeholder="Enter your email"
-                    // fullWidth
                     required
                   ></TextField>
                   <br />
@@ -51,13 +42,11 @@ export default function LoginPage(props) {
                     label="Password"
                     placeholder="Enter your Password"
                     type="password"
-                    // fullWidth
                     required
                   ></TextField>
                   <br />
                   <br />
                   <br />
-
                   <Link
                     href="login"
                     onClick={props.returnToMainView}

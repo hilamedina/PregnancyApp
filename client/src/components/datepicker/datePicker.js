@@ -8,13 +8,10 @@ export default function DatePicker(props) {
 
   return (
     <div className="date-Picker-style">
-      {/* <h1 className="text-center">React Calendar</h1> */}
       <div className="calendar-container">
         <Calendar onChange={setDate} value={date} />
       </div>
-      <p className="text-center">
-        {/* <span className="bold">Selected Date:</span> {date.toDateString()} */}
-      </p>
+      <p className="text-center"></p>
       <button onClick={props.returnToMainView}>Back</button>
     </div>
   );

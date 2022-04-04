@@ -20,8 +20,6 @@ const getMyWeightForUsers = async (body) => {
   return await MyWeight.find();
 };
 
-// return await Todo.find({ userId: body.userId });
-
 const getMyEvent = async (queries) => {
   const { start, end } = queries;
   console.log('query:', start, end);

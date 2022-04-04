@@ -4,12 +4,10 @@ import { getMyWeightData, addMyWeight } from '../../Api/Api';
 import MyWeightForm from './myWeightForm';
 import MyWeightItem from './myWeightItem';
 import '../myWeight/myWeight.css';
-
 const AppmyWeight = (props) => {
   const myWeight = (weight) => {
     addMyWeight(setmyWeightData, weight);
   };
-
   const [myWeightData, setmyWeightData] = useState([]);
   useEffect(() => {
     getMyWeightData(setmyWeightData);
