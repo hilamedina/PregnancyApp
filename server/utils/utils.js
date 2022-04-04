@@ -78,7 +78,6 @@ const addNewEvent = async (event) => {
 };
 
 module.exports = {
-  // registerUser,
   getMyEvent,
   addNewEvent,
   addNewWeight,

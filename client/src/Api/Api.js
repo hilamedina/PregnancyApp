@@ -3,11 +3,6 @@ let myURL = 'http://localhost:5000/';
 if (process.env.NODE_ENV === 'production') {
   myURL = '/';
 }
-
-// export default axios.create({
-//   baseURL: myURL,
-// });
-// onSuccess = state
 export const getSizeData = (onSuccess) => {
   axios.get(myURL + 'size').then((response) => {
     onSuccess(response.data);
