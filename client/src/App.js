@@ -1,5 +1,4 @@
 import './App.css';
-// import modal from 'react-modal';
 import Calendar from './components/calendar/calendar';
 import 'react-datetime/css/react-datetime.css';
 import LogingPage from './components/LoginPage/LoginPage';
@@ -9,11 +8,9 @@ import MainBtnScreen from './components/butoonComponent/mainBtnScreen';
 import { useState } from 'react';
 import SizeCarousel from './components/carousel/sizeCarousel';
 import WeeklyCarousel from './components/carousel/weeklyCarousel';
-// import AppToDo from './components/todo/appToDo';
 import AppToDo from './components/todo/appToDo';
 import MyWeight from './components/myWeight/appMyWeight';
 import { withMobileDialog } from '@material-ui/core';
-// import { Modal } from '@mui/material';
 
 export const mainView = 1;
 export const weeklyView = 2;
@@ -56,13 +53,9 @@ function App() {
   };
   return (
     <>
-      {/* <header></header> */}
       <div className="App">{getCurrentView()}</div>
     </>
   );
 }
 
 export default App;
-
-//   צד שמאל זה השם של הפרופס בסייד קרוסל - מי שזה נשלח אליו
-// בצד ימין שם הערך שלו בקובץ הנוכחי

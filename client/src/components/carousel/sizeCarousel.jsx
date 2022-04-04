@@ -71,9 +71,3 @@ const SizeCarousel = (props) => {
 };
 
 export default SizeCarousel;
-
-//       // צד שמאל זה השם של הפרופס בסוויפבל - מי שזה נשלח אליו
-//       //צד ימין זה איך שזה נקרא מהקובץ הזה - שקיבהלתי מהאפ כי הפונקציה במקרה הזה כתובה שם
-//       returnToMainView={props.returnToMainView}
-//       getDataStyleElement={getStyleElement1}
-// project.id.title

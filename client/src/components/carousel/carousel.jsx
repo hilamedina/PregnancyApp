@@ -10,9 +10,6 @@ import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 import '../butoonComponent/btn.css';
 
-// import { autoPlay } from 'react-swipeable-views-utils';
-// const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
-
 function SwipeableTextMobileStepper(props) {
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
