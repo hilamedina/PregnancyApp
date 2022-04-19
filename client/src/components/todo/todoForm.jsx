@@ -8,7 +8,6 @@ function TodoForm({ addTodo }) {
     addTodo(value);
     setValue('');
   };
-
   return (
     <form onSubmit={handleSubmit}>
       <input

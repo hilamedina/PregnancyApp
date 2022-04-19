@@ -3,7 +3,6 @@ import { useState } from 'react';
 import '../myWeight/myWeight.css';
 
 function MyWeightForm({ myWeight }) {
-  // console.log(addMyWeight);
   console.log(myWeight);
   const [value, setValue] = useState('');
 

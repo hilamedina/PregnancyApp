@@ -5,7 +5,6 @@ const userRoute = require('../server/Route/Route');
 const cors = require('cors');
 const path = require('path');
 const app = express();
-// const Size = require('../server/model/sizeModel');
 
 const publicPath = path.join(__dirname, '../client/build');
 const { seedInitialData } = require('../server/seedDB');
@@ -20,8 +19,6 @@ const PASSWORD = process.env.PASSWORD;
 mongoose.connect(
   `mongodb+srv://HilaDb:${PASSWORD}@databaseproject.nwjez.mongodb.net/pregnancyDB?retryWrites=true&w=majority`
 );
-
-// const PORT = process.env.PORT;
 
 const PORT = process.env.PORT;
 app.listen(process.env.PORT, () => {
